@@ -6,7 +6,7 @@ var settings = {
 
 $.ajax(settings).done(function (resp1) {
   console.log(resp1.fact);
-  document.getElementById("res").innerText = 'I havent done anything big to the website, but heres a random cat fact "'+ resp1.fact + '"';
+  document.getElementById("res").innerText = resp1.fact;
   $.ajax({
     "url": "https://api.thecatapi.com/v1/images/search",
     "method": "GET",
