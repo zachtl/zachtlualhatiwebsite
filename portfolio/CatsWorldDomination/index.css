@@ -99,6 +99,7 @@ li a {
             rgba(251, 7, 217, 1) 90%,
             rgba(255, 0, 0, 1) 100%);
     -webkit-text-fill-color: transparent;
+    background-clip: text;
     -webkit-background-clip: text;
 }
 
