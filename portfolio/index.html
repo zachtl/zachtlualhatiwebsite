@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zach Lualhati | Portfolio</title>
+    <link href="../css/index.css" rel="stylesheet">
+    <style>
+        #main1 {
+            background-image: url("/assets/IMG_2817.JPG");
+            filter: grayscale() brightness(0.75);
+        }
+    </style>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="../" class="underline">Home</a></li>
+            <li><a href="/portfolio/" class="underline" style="text-shadow: 0 0 10px white;">My Works</a></li>
+            <li><a href="./resume/" class="underline">Resume</a></li>
+            <li><a href="./extra/" class="underline">Extras</a></li>
+        </ul>
+        <div class="prog"></div>
+    </nav>
+    <div style="position: relative;">
+        <div id="main1">
+        </div>
+        <div class="hero" data-aos="fade-up" data-aos-duration="1000">
+            <h1>&lt;<span class="highlight">My Works</span>/&gt;</h1>
+            <p style="padding-top:2rem; padding-right: 25vw">Current works that I have openly shared</p>
+            <br>
+        </div>
+    </div>
+    <main>
+        <section class="lead" data-aos="fade-up" data-aos-duration="1000">
+            <h1 class="blink">Front End Development</h1>
+            <p><em>fyi, I dont actually focus on front end development, its just a good skill</em></p>
+        </section>
+        <section data-aos="fade-up" data-aos-duration="1000">
+            <h1>Exemplar Website for Work</h1>
+            <div class="resp">
+                <p>This is an exemplar website I have made for my job as Code Camp. This was something i've uploaded to
+                    their Code Camp World service which allows kids to create websites, amongst other things such as 2D
+                    and
+                    3D games. I'm actually suprised that they teach 8-13 year olds website development. But I mean hey,
+                    I
+                    started early which is the main reason why I even do software development now. The website serves as
+                    an
+                    example that is used in classes. As well as pretty much touching up my Front End Skills. Obviously
+                    makes
+                    use of HTML, CSS and Javascript, as well as using plugins like AOS for added touch. It should be
+                    noted that
+                    the first paragraph was created using an AI to type out a generic sentence based of idea the topic.
+                </p>
+                <img class="test-shine" src="../assets/Screenshot 2022-09-07 184339.png">
+            </div>
+            <a href="./CatsWorldDomination/"><u>View the site here!</u></a>
+        </section>
+    </main>
+    <footer>
+        By Zach Lualhati
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        if ((navigator.userAgent.indexOf("Chrome") > -1) && (navigator.userAgent.indexOf("Safari") > -1)) {
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = 'https://unpkg.com/aos@next/dist/aos.css';
+            document.getElementsByTagName('head')[0].appendChild(link);
+            AOS.init();
+        }
+    </script>
+    <script src="./index.js" type="text/javascript"></script>
+</body>
+
+</html>
