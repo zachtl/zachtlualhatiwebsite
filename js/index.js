@@ -6,12 +6,6 @@ if ((navigator.userAgent.indexOf("Chrome") > -1) && (navigator.userAgent.indexOf
         } else {
             document.querySelector("nav").classList.remove("navfil");
         }
-        var scrolltotop = document.scrollingElement.scrollTop;
-        var target = document.getElementById("main1");
-        var xvalue = "center";
-        var factor = 0.75;
-        var yvalue = scrolltotop * factor;
-        target.style.backgroundPosition = xvalue + " " + yvalue + "px";
         document.querySelector("div.prog").style = "width: " + ((scroll * 100) / (document.documentElement.scrollHeight - document.documentElement.clientHeight)) + "%";
     })
 } else {
@@ -60,3 +54,5 @@ function type() {
         setTimeout(deleteType, 2500);
     }
 }
+
+// Refer to https://keithclark.co.uk/articles/pure-css-parallax-websites/demo3/ for improved Parallax

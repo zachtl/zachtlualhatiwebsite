@@ -13,6 +13,7 @@ body {
     scrollbar-width: none;
     height: 100vh;
     scroll-behavior: smooth;
+    overflow: hidden;
 }
 
 a {
@@ -149,7 +150,8 @@ a {
 }
 
 main {
-    padding: 0rem 6rem
+    padding: 0rem 6rem;
+    background: #0F0F0F;
 }
 
 main h1 {
@@ -193,6 +195,28 @@ footer {
     color: black;
 }
 
+.parallax {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 300px;
+    perspective: 300px;
+}
+
+.parallax_group {
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.parallax_layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
 @media (max-width: 961px) {
     .hero h1 {
         font-size: 6.5rem;
@@ -205,7 +229,7 @@ footer {
 
     .resp img {
         width: 100%;
-        height: 15vh;
+        height: 100%;
         padding-left: 1rem;
         padding-top: 1rem;
     }

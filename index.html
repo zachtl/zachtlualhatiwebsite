@@ -9,14 +9,14 @@
     <link href="./css/index.css" rel="stylesheet">
     <style>
         #main1 {
-            background-image: url("/assets/IMG_1907.JPG");
-            filter: grayscale(0.5) brightness(0.75) blur(5px);
+            background-image: url("/assets/IMG_2817.JPG");
+            filter: grayscale() brightness(0.75) blur(0px);
         }
     </style>
 </head>
 
 <body>
-    <nav>
+    <nav> 
         <ul>
             <li><a href="./" class="underline" style="text-shadow: 0 0 10px white;">Home</a></li>
             <li><a href="./portfolio/" class="underline">My Works</a></li>
@@ -25,34 +25,33 @@
         </ul>
         <div class="prog"></div>
     </nav>
-    <div style="position: relative;">
-        <div id="main1">
-        </div>
-        <div class="hero" data-aos="fade-up" data-aos-duration="1000">
-            <h1>&lt;<span class="highlight">Zach Lualhati</span>/&gt;</h1>
-            <p id="type" style="position:absolute" class="highlight blink"></p>
-            <p style="padding-top:2rem; padding-right: 25vw">A year 12 Student from Australia. I'm currently finishing
-                up with Exams and expected to move into university where i'll study Software Engineering</p>
-            <br>
-            <a href="./resume" class="highlight"
-                style="padding: 1rem; backdrop-filter: blur(5px);-webkit-backdrop-filter: blur(5px);">Get in touch</a>
+    <div class="parallax">
+        <div class="parallax_group">
+            <div class="parallax_layer" style="transform: translateZ(0); z-index:-1;">
+                <img src="./assets/IMG_2817.JPG"
+                    style="display: block;width: 100vw;height: 100vh;object-fit: cover; object-position: center top;">
+            </div>
+            <div class="parallax_layer">
+                <div class="hero" data-aos="fade-up" data-aos-duration="1000">
+                    <h1>&lt;<span class="highlight">Zach Lualhati</span>/&gt;</h1>
+                    <p id="type" style="position:absolute" class="highlight blink"></p>
+                    <p style="padding-top:2rem; padding-right: 25vw">A year 12 Student from Australia. I'm currently
+                        finishing
+                        up with Exams and expected to move into university where i'll study Software Engineering</p>
+                    <br>
+                    <a href="./resume" class="highlight"
+                        style="padding: 0.5rem !important; backdrop-filter: blur(5px) brightness(0.5);-webkit-backdrop-filter: blur(5px) brightness(0.5);">Get
+                        in touch</a>
+                </div>
+            </div>
         </div>
     </div>
     <div
         style="position:fixed; bottom:0;left:0;right:0;height:2.5vh;text-align: center;color:#ffffff40; font-size: 0.5em;">
         <p>Made by Zach Lualhati, obviously</p>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        if ((navigator.userAgent.indexOf("Chrome") > -1) && (navigator.userAgent.indexOf("Safari") > -1)) {
-            var link = document.createElement('link');
-            link.rel = 'stylesheet';
-            link.href = 'https://unpkg.com/aos@next/dist/aos.css';
-            document.getElementsByTagName('head')[0].appendChild(link);
-            AOS.init();
-        }
-    </script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <script src="./js/index.js" type="text/javascript"></script>
 </body>
 
